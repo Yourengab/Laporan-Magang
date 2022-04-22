@@ -140,6 +140,9 @@ body {
 .btn-back button:hover {
   background-color: var(--thirdColor);
 }
+.btn-back button:hover a {
+  color: var(--mainColor);
+}
 @media screen and (max-width: 768px) {
   body {
     padding: 0 30px;

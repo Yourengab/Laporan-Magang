@@ -33,19 +33,23 @@ body {
   margin-bottom: 50px;
 }
 .header .bab {
-  background-color: #30433f;
+  background-color: var(--boxcColor);
   height: 60vh;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 8px 7px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 230ms ease-in-out;
+  transform: scale(0.9);
 }
-
+.header .bab:hover {
+  background-color: #26312f;
+}
 .header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 20px;
 }
 .header .bab .text {
   text-align: center;
@@ -73,6 +77,12 @@ body {
 .btn-header {
   display: flex;
   justify-content: center;
+}
+.header .bab .text button:hover {
+  background-color: var(--thirdColor);
+}
+.header .bab .text button:hover a {
+  color: var(--mainseColor);
 }
 #header .back {
   margin: 50px auto;
