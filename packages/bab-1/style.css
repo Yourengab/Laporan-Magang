@@ -16,104 +16,187 @@ html {
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #0d2e2a;
+  background-color: var(--mainColor);
+  padding: 0 100px;
 }
 .active {
   font-weight: 700;
   color: var(--thirdColor);
 }
-#header {
-  padding: 0 100px;
-}
-#header h1 {
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--boxcColor);
+  filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, 0.25));
   color: var(--textColor);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.header h1 {
   font-weight: 500;
+}
+.pendahuluan {
+  margin-top: 120px;
+  color: var(--textColor);
+}
+.pendahuluan h1 {
   text-align: center;
-  margin-top: 80px;
+  font-size: 40px;
   margin-bottom: 50px;
 }
-.header .bab {
-  background-color: var(--boxcColor);
-  height: 60vh;
-  border-radius: 10px;
+.pendahuluan .latar-belakang h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.pendahuluan .latar-belakang p {
+  text-align: justify;
+  font-size: 20px;
+}
+.pendahuluan .umum h2 {
+  margin: 50px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.pendahuluan .umum p {
+  text-align: start;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.pendahuluan .khusus h2 {
+  margin: 50px 0;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.pendahuluan .khusus p {
+  text-align: start;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.tujuan {
+  color: var(--textColor);
+}
+.tujuan h1 {
+  font-size: 40px;
+  text-align: center;
+  color: var(--textColor);
+  margin: 50px 0 50px 0;
+}
+.tujuan .umum h2 {
+  margin: 50px 0;
+}
+.tujuan .umum p {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.tujuan .khusus h2 {
+  margin: 50px 0;
+}
+.tujuan .khusus p {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.manfaat {
+  color: var(--textColor);
+}
+.manfaat h1 {
+  font-size: 40px;
+  text-align: center;
+  color: var(--textColor);
+  margin: 50px 0 50px 0;
+}
+.manfaat .bagi-sekolah h2 {
+  margin: 50px 0;
+}
+.manfaat .bagi-sekolah p {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.manfaat .perusahaan h2 {
+  margin: 50px 0;
+}
+.manfaat .perusahaan p {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.manfaat .bagi-siswa h2 {
+  margin: 50px 0;
+}
+.manfaat .bagi-siswa p {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.btn .previous,
+.btn .next {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 8px 7px 10px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  transition: 230ms ease-in-out;
-  transform: scale(0.9);
-}
-.header .bab:hover {
-  background-color: #26312f;
-}
-.header {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-}
-.header .bab .text {
-  text-align: center;
-  padding: 50px;
-  color: var(--textColor);
-}
-
-.header .bab .text p {
-  font-weight: 500;
-  padding-bottom: 50px;
-}
-.header .bab .text button {
   width: 130px;
-  height: 40px;
+  height: 60px;
   background-color: var(--secondColor);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.header .bab .text button a {
-  text-decoration: none;
-  color: var(--textColor);
-  font-weight: 500;
-}
-.btn-header {
-  display: flex;
-  justify-content: center;
-}
-.header .bab .text button:hover {
-  background-color: var(--thirdColor);
-}
-.header .bab .text button:hover a {
-  color: var(--mainseColor);
-}
-#header .back {
-  margin: 50px auto;
-  width: 300px;
-  height: 70px;
-  background-color: var(--secondColor);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 10px;
   transition: 300ms ease-in-out;
 }
-#header .back a {
-  text-decoration: none;
-  color: var(--textColor);
-  font-size: 18px;
-  font-weight: 500;
-}
-#header .back:hover {
+.btn .previous:hover {
   background-color: var(--thirdColor);
 }
-#header .back:hover a {
-  color: #0d2e2a;
+.btn .next:hover {
+  background-color: var(--thirdColor);
 }
 @media screen and (max-width: 768px) {
-  #header {
-    padding: 0 30px;
+  body {
+    padding: 0 50px;
+  }
+  .pendahuluan .latar-belakang p,
+  .pendahuluan .umum p,
+  .pendahuluan .khusus p {
+    font-size: 18px;
+  }
+  .tujuan .umum p,
+  .pendahuluan .umum p,
+  .pendahuluan .khusus p {
+    font-size: 18px;
+  }
+  .manfaat .bagi-sekolah p,
+  .manfaat .perusahaan p,
+  .manfaat .bagi-siswa p {
+    font-size: 18px;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .header {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+@media screen and (max-width: 460px) {
+  .btn .previous,
+  .btn .next {
+    transform: scale(0.8);
+    margin: 0;
+  }
+  .pendahuluan .latar-belakang p,
+  .pendahuluan .umum p,
+  .pendahuluan .khusus p {
+    font-size: 16px;
+  }
+  .tujuan .umum p,
+  .pendahuluan .umum p,
+  .pendahuluan .khusus p {
+    font-size: 16px;
+  }
+  .manfaat .bagi-sekolah p,
+  .manfaat .perusahaan p,
+  .manfaat .bagi-siswa p {
+    font-size: 16px;
+  }
+  body {
+    padding: 0 20px;
   }
 }

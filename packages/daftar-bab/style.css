@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --mainColor: #0d2e2a;
+  --secondColor: #07675b;
+  --thirdColor: #57b2a7;
+  --textColor: #fff;
+  --boxcColor: #30433f;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--mainColor);
+}
+.active {
+  font-weight: 700;
+  color: var(--thirdColor);
+}
+#header {
+  padding: 0 100px;
+}
+#header h1 {
+  color: var(--textColor);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.header .bab {
+  background-color: var(--boxcColor);
+  height: 60vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 8px 7px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 230ms ease-in-out;
+  transform: scale(0.9);
+}
+.header .bab:hover {
+  background-color: #26312f;
+}
+.header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.header .bab .text {
+  text-align: center;
+  padding: 50px;
+  color: var(--textColor);
+}
+
+.header .bab .text p {
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+.header .bab .text button {
+  width: 130px;
+  height: 40px;
+  background-color: var(--secondColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.header .bab .text button a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-weight: 500;
+}
+.btn-header {
+  display: flex;
+  justify-content: center;
+}
+.header .bab .text button:hover {
+  background-color: var(--thirdColor);
+}
+.header .bab .text button:hover a {
+  color: var(--mainseColor);
+}
+#header .back {
+  margin: 50px auto;
+  width: 300px;
+  height: 70px;
+  background-color: var(--secondColor);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+#header .back a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: 500;
+}
+#header .back:hover {
+  background-color: var(--thirdColor);
+}
+#header .back:hover a {
+  color: #0d2e2a;
+}
+@media screen and (max-width: 768px) {
+  #header {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

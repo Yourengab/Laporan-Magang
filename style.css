@@ -16,7 +16,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #0d2e2a;
+  background-color: var(--mainColor);
 }
 .active {
   font-weight: 700;
