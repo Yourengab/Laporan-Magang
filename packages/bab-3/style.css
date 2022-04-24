@@ -59,18 +59,95 @@ body {
   color: var(--textColor);
   margin-top: 120px;
 }
-.ringkasan h2 {
+.table-text h2 {
   font-weight: 500;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
-.ringkasan .desember {
+.ringkasan .table {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.ringkasan .desember table {
-  text-align: center;
+.ringkasan .table table {
   width: 100%;
   height: 200px;
+  filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, 0.25));
+}
+.header-table {
+  background-color: var(--secondColor);
+  color: var(--textColor);
+}
+table,
+tr,
+td {
+  color: var(--mainColor);
+}
+tr {
+  text-align: center;
+}
+tr,
+td {
+  background-color: var(--textColor);
+}
+.project-web .tahap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tugas {
+  color: var(--textColor);
+  margin-top: 120px;
+}
+.tugas h1 {
+  text-align: center;
+}
+.tugas .project-text {
+  margin: 50px 0;
+}
+
+.tahap p,
+.tahap img {
+  font-size: 20px;
+  padding-bottom: 50px;
+  width: 1050px;
+}
+.tahap img {
+  width: 1050px;
+  border-radius: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.btn .previous,
+.btn .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 60px;
+  background-color: var(--secondColor);
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+.btn .previous:hover {
+  background-color: var(--thirdColor);
+}
+.btn .next:hover {
+  background-color: var(--thirdColor);
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body {
+    padding: 0 20px;
+  }
 }
