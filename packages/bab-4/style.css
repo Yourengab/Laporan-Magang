@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --mainColor: #0d2e2a;
+  --secondColor: #07675b;
+  --thirdColor: #57b2a7;
+  --textColor: #fff;
+  --boxcColor: #30433f;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--mainColor);
+  padding: 0 100px;
+}
+.active {
+  font-weight: 700;
+  color: var(--thirdColor);
+}
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: var(--boxcColor);
+  filter: drop-shadow(0px 18px 10px rgba(0, 0, 0, 0.25));
+  color: var(--textColor);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.header h1 {
+  font-weight: 500;
+}
+.penutup {
+  color: var(--textColor);
+  margin-top: 120px;
+}
+.penutup h1 {
+  text-align: center;
+  text-align: center;
+}
+.penutup .kesimpulan h2,
+.penutup .saran h2 {
+  margin: 50px 0;
+  font-weight: 500;
+}
+.penutup .kesimpulan p,
+.penutup .saran p {
+  font-size: 22px;
+}
+.penutup .saran-perusahaan,
+.penutup .saran-sekolah {
+  margin-top: 50px;
+}
+.penutup .saran-perusahaan h2,
+.penutup .saran-sekolah h2 {
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+.penutup .saran-perusahaan p,
+.penutup .saran-sekolah p {
+  padding-bottom: 15px;
+  font-size: 22px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.btn .previous,
+.btn .next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 60px;
+  background-color: var(--secondColor);
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+.btn .previous:hover {
+  background-color: var(--thirdColor);
+}
+.btn .next:hover {
+  background-color: var(--thirdColor);
+}
