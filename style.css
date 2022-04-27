@@ -168,6 +168,9 @@ body {
   .header img {
     order: 1;
   }
+  .header .headerText button {
+    margin-bottom: 200px;
+  }
 }
 @media screen and (max-width: 700px) {
   .header .headerText {
@@ -182,8 +185,21 @@ body {
   #header {
     padding: 0 50px;
   }
+  .content .about .aboutText h2,
+  .content .laporan .lapText h2 {
+    font-size: 22px;
+  }
+  .content .about .aboutText p,
+  .content .laporan .lapText p {
+    font-size: 18x;
+  }
+  .content .about .aboutText button,
+  .content .laporan .lapText button {
+    width: 150px;
+    height: 50px;
+  }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
   .header .headerText {
     font-size: 24px;
   }
@@ -199,5 +215,8 @@ body {
   }
   .header .headerText button a {
     font-size: 16px;
+  }
+  .header .headerText button {
+    margin-bottom: 30px;
   }
 }

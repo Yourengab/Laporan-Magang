@@ -44,7 +44,6 @@ body {
 }
 .penutup h1 {
   text-align: center;
-  text-align: center;
 }
 .penutup .kesimpulan h2,
 .penutup .saran h2 {
@@ -92,4 +91,44 @@ body {
 }
 .btn .next:hover {
   background-color: var(--thirdColor);
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 50px;
+  }
+  .penutup h1 {
+    font-size: 30px;
+  }
+  .penutup .saran-perusahaan p,
+  .penutup .saran-sekolah p,
+  .penutup .kesimpulan p,
+  .penutup .saran p {
+    font-size: 18px;
+  }
+  .penutup .saran-perusahaan h2,
+  .penutup .saran-sekolah h2,
+  .penutup .kesimpulan h2,
+  .penutup .saran h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 460px) {
+  body {
+    padding: 0 20px;
+  }
+  .penutup h1 {
+    font-size: 28px;
+  }
+  .penutup .saran-perusahaan p,
+  .penutup .saran-sekolah p,
+  .penutup .kesimpulan p,
+  .penutup .saran p {
+    font-size: 16px;
+  }
+  .penutup .saran-perusahaan h2,
+  .penutup .saran-sekolah h2,
+  .penutup .kesimpulan h2,
+  .penutup .saran h2 {
+    font-size: 22px;
+  }
 }

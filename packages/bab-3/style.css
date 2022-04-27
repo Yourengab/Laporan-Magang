@@ -68,6 +68,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0 auto;
 }
 .ringkasan .table table {
   width: 100%;
@@ -110,12 +111,19 @@ td {
 .tahap p,
 .tahap img {
   font-size: 20px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   width: 1050px;
 }
 .tahap img {
   width: 1050px;
   border-radius: 10px;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+  transition: 300ms ease-in-out;
+}
+.tahap img:hover {
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+  transform: translateY(5px);
+  cursor: pointer;
 }
 .btn {
   display: flex;
@@ -141,13 +149,57 @@ td {
 .btn .next:hover {
   background-color: var(--thirdColor);
 }
+@media screen and (max-width: 1200px) {
+  .ringkasan {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tahap img,
+  .tahap p {
+    width: 600px;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     padding: 0 50px;
   }
+  .kegiatan p,
+  .tahap p {
+    font-size: 18px;
+  }
+  .kegiatan h1,
+  .tugas h1 {
+    font-size: 30px;
+  }
+  .kegiatan h2,
+  .tahap h2,
+  .table-text h2 {
+    font-size: 26px;
+  }
+  .tahap img,
+  .tahap p {
+    width: 500px;
+  }
 }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 560px) {
   body {
     padding: 0 20px;
+  }
+  .kegiatan p,
+  .tahap p {
+    font-size: 16px;
+  }
+  .kegiatan h1,
+  .tugas h1 {
+    font-size: 26px;
+  }
+  .kegiatan h2,
+  .tahap h2,
+  .table-text h2 {
+    font-size: 22px;
+  }
+  .tahap img,
+  .tahap p {
+    width: 330px;
   }
 }
